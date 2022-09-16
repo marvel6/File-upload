@@ -1,0 +1,48 @@
+openapi: 3.0.0
+info:
+  title: upload
+  contact: {}
+  version: '1.0'
+servers:
+- url: https://carginie.herokuapp.com/api
+  variables: {}
+paths:
+  /upload:
+    post:
+      tags:
+      - upload
+      summary: uploads
+      operationId: uploads
+      parameters: []
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      deprecated: false
+  /:
+    post:
+      tags:
+      - upload
+      summary: create
+      operationId: create
+      parameters: []
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      deprecated: false
+    get:
+      tags:
+      - upload
+      summary: get all image
+      operationId: getallimage
+      parameters: []
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      deprecated: false
+tags:
+
+- name: upload
+  description: ''
